@@ -23,7 +23,7 @@ public nomeUsuario: string;
   }
 
   ngOnInit(): void {
-   // this.router.navigate(['/autenticacao/login'])
+  // this.router.navigate(['/autenticacao/login'])
   }
 
 }

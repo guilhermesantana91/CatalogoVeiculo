@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CatalogoVeiculoAppp';
+
+  public isLogado: boolean;
+
+  constructor(){
+    this.isLogado = false;
+  }
 }

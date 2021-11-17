@@ -5,10 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './login.component.html'
 })
 export class LoginComponent implements OnInit {
+public isLogado: boolean;
 
-  constructor() { }
+  constructor() {
+    this.isLogado =  false;
+   }
 
   ngOnInit(): void {
+     
   }
 
 }

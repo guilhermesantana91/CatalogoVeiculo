@@ -9,7 +9,7 @@ import { CadastroClienteComponent } from './cliente/cadastro-cliente/cadastro-cl
 import { CadastroMarcaComponent } from './marca/cadastro-marca/cadastro-marca.component';
 
 export const rootRouterConfig: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full'},
+    { path: '', redirectTo: '/autenticacao/login', pathMatch: 'full'},
     { path: 'home', component: HomeComponent},
     { path:  'veiculo/cadastro-veiculo', component: CadastroVeiculoComponent},
     { path:  'veiculo/lista-veiculo', component: ListaVeiculoComponent},
