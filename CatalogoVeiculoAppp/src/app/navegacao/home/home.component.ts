@@ -13,7 +13,7 @@ export class HomeComponent{
   }
 
   ngOnInit(): void {
-    this.cookieService.set('vchCodUsuario','jsantana@gruporecovery.com')
+    this.cookieService.set('vchCodUsuario','')
     this.cookieValue = this.cookieService.get('vchCodUsuario');
   }
 
