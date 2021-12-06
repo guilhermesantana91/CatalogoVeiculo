@@ -9,29 +9,25 @@ Create Table _tblGTipoUsuario
 	dtmDataAtualizacao datetime not null,
 	intIdUsuarioAtualizacao int not null,
 	bitAtivo bit not null
+	
 );
 
 Create Table _tblGUsuario
 (
 	intIdUsuario int primary key identity,
-	intIdTipoUsuario int,
+	intIdTipoUsuario int not null,
 	vchCodUsuario varchar(8000) not null,
 	vchNome varchar(350) not null,
-	vchDDTelefone varchar(2) null,
-	vchTelefone varchar(20)  null,
-	vchCelulalr varchar(2) null,
-	vchCep varchar(30) null,
-	vchLogradouro varchar(650) null,
-	vchNumero varchar(6) null,
-	vchComplemento varchar(350) null,
-	vchBairro varchar(350) null,
-	vchCidade varchar(350) null,
-	vchUF varchar(2),
+	vchCpf varchar(14) not null,
+	vchEmail varchar(300) not null,
 	dtmDataInclusao datetime not null,
 	intIdUsuarioInclusao int not null,
 	dtmDataAtualizacao datetime not null,
 	intIdUsuarioAtualizacao int not null,
-	bitAtivo bit not null
+	bitAtivo bit not null,
+	constraint fk_tipoUsuario
+	FOREIGN KEY (intIdTipoUsuario)
+	REFERENCES _tblGTipoUsuario(intIdTipoUsuario)
 
 
 );
